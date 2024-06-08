@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 import About from "./components/About";
 
 export default function Home() {
-  const [screenWidth, setScreenWidth] = useState<number|string>();
+  // const [screenWidth, setScreenWidth] = useState<number|string>();
   // const [screenHeight, setScreenHeight] = useState<number|string>(`${(Math.round(window.innerHeight))/16}rem`);
   // useEffect(() => {
   //   // Logic to get and update the screen width
