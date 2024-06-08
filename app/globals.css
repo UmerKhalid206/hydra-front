@@ -1,33 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --width-XL: 1440px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+body::-webkit-scrollbar {
+  display: none;
+}
+
+@font-face {
+  font-family: 'GumokRegular';
+  src: url('/fonts/Gumok.ttf') format('ttf');/* Update the file format if necessary */
+  /* Add more src lines if you have other font formats */
+  font-weight: normal; /* Adjust font weight if needed */
+  font-style: normal; /* Adjust font style if needed */
+}
+
+.gumok{
+  font-family: 'GumokRegular';
+}
+
+
+.weight{
+  font-weight: 100;
+}
+
+.bck-vect {
+  background-image: url('/SM_V1.svg'), url('/SM_V2.svg'), url('/SM_V3.svg');
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: calc(50% + 37px) 80px, calc(50% - 1px) -33px, calc(50%) calc(50% + 47px);
+  background-size: 342px 510px, 258px 660px, 617px 352px;
+  /* background-image: url('/Vector1.svg'), url('/Vector2.svg'), url('/Vector3.svg'), url('/Vector4.svg');
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat; */
+
+}
+
+
+@media (min-width: 390px) and (max-width: 768px){
+  .bck-vect {
+    background-position: calc(50% + 37px) 80px, calc(50% - 21px) -45px, calc(50%) calc(50% + 47px);
+    background-size: 347px 562px, 302px 705px, 617px 352px;
+    /* background-position: calc(100vw * 0.2615) calc(644px * 0.1195);
+    background-size: calc(100vw * 0.7384) calc(644px * 0.8726); */
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+
+
+@media (min-width: 768px) and (max-width:850px) {
+  .bck-vect {
+    background-image: url('/Vector1.svg');
+    background-repeat: no-repeat;
+    background-position: calc(100vw *0.60) calc(961px * 0.08);
+    background-size: calc(100vw *0.51) calc(961px *0.55);
+  }
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+@media (min-width: 850px) and (max-width:1024px) {
+  .bck-vect {
+    background-image: url('/Vector1.svg');
+    background-repeat: no-repeat;
+    background-position: calc(100vw *0.62) calc(961px * 0.08);
+    background-size: calc(100vw *0.51) calc(961px *0.51);
   }
+}
+
+@media (min-width: 1024px) and (max-width:1280px) {
+  .bck-vect {
+    background-image: url('/Vector1.svg');
+    background-repeat: no-repeat;
+    background-position: calc(100vw *0.675) calc(961px * 0.13);
+    background-size: calc(100vw *0.40) calc(961px *0.68);
+  }
+}
+@media (min-width: 1280px) and (max-width:1440px) {
+  .bck-vect {
+    background-image: url('/Vector1.svg');
+    background-repeat: no-repeat;
+    background-position: calc(100vw *0.72) calc(961px * 0.155);
+    background-size: calc(100vw *0.30) calc(961px *0.65);
+
+  }
+}
+
+@media (min-width: 1440px) and (max-width: 1576px) {
+  .bck-vect {
+    background-image: url('/Vector1.svg');
+    background-repeat: no-repeat;
+    background-position: calc(100vw *0.710416) calc(961px * 0.1769);
+    background-size: calc(100vw *0.2875) calc(961px *0.696149);
+
+
+  }
+}
+
+
+
+.umer {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 640px) {
+  .umer {
+      max-width: 640px;
+  }
+}
+@media (min-width: 768px) {
+  .umer {
+      max-width: 768px;
+  }
+}
+@media (min-width: 1024px) {
+  .umer {
+      max-width: 1024px;
+  }
+}
+@media (min-width: 1280px) {
+  .umer {
+      max-width: 1440px;
+  }
+}
+@media (min-width: 1536px) {
+  .umer {
+      max-width: 1920px;
+  }
+}
+
+
+
+.transX{
+  transform: rotate(180deg);
+}
+
+.Transtion{
+  transition: transform 0.5s ease;
+}
+
+
+
+
+/* carousel css */
+
+.carousel {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-inner {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carousel-item {
+  min-width: 100%;
+  transition: transform 0.5s ease;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: auto;
+}
+
+.carousel-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.carousel-control.prev {
+  left: 10px;
+}
+
+.carousel-control.next {
+  right: 10px;
 }
