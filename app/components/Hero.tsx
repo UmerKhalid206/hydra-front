@@ -48,8 +48,8 @@ const Hero = () => {
         nisl tincidunt eget. Lectus mauris eros in vitae.
         </p>
 
-        <Link href={'#'} className='flex justify-center lg:justify-start items-center mt-[4rem] lg:mt-[66px] gap-[40px] '>
-        <button className='-mt-[26px] font-bold text-[14px] md:text-[12px] text-[#343045] bg-gradient-to-r from-[#8176AF] to-[#C0B7E8] rounded-[40px] px-[3.75rem] py-4 md:px-12 md:py-[15px]'>BUILD YOUR WORLD</button>
+        <Link href={'#'} className=' flex justify-center items-center lg:justify-start  mt-[38px] lg:mt-[66px] gap-[40px] '>
+        <button className=' font-bold text-[14px] md:text-[12px] text-[#343045] bg-gradient-to-r from-[#8176AF] to-[#C0B7E8] rounded-[40px] px-[3.75rem] py-4 md:px-12 md:py-[15px]'>BUILD YOUR WORLD</button>
         <Image 
         src={'/shape.png'}
         width={40}

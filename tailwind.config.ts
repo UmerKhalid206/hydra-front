@@ -14,9 +14,10 @@ const config: Config = {
     },
     extend: {
       screens:{
-        'MB': '390px',
-        'LT':'850px',
-        'FF': '1440px',
+        'MB': '390px',      //hydras own design mobile
+        'LT':'860px',       //large tab
+        'LS':'1150px',      //large screen
+        'FF': '1440px',      //fourteen fourty
       },
       fontFamily :{
         Montserrat: '"Montserrat", sans-serif',

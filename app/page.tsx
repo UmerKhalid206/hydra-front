@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 import About from "./components/About";
 
 export default function Home() {
-  // const [screenWidth, setScreenWidth] = useState<number|string>();
+  const [screenWidth, setScreenWidth] = useState<number|string>();
   // const [screenHeight, setScreenHeight] = useState<number|string>(`${(Math.round(window.innerHeight))/16}rem`);
   // useEffect(() => {
   //   // Logic to get and update the screen width
@@ -30,7 +30,7 @@ export default function Home() {
     'https://via.placeholder.com/800x400?text=Slide+3',
   ];
   return (
-    <div className="bck-vect lg:container"
+    <div className="bck-vect"
     style={{
       // backgroundImage:"url('/Vector1.svg')",
       // backgroundRepeat: "no-repeat",
@@ -39,12 +39,10 @@ export default function Home() {
     }
     }
     >
-      <h1 className="text-white">
-        {}
-      </h1>
+
     <Navbar />
     <Hero />
-    {/* <About /> */}
+    <About />
 
     {/* <Carousel items={images} /> */}
     
