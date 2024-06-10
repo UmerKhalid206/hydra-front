@@ -37,7 +37,7 @@ const About = () => {
         alt='aboutHero'
         width={524}
         height={557}
-        className='w-[18.75rem] h-[22.38rem] LT:w-[21.5rem] LT:h-[25rem] lg:w-[26rem] lg:h-[28rem] FF:w-[32.75rem] FF:h-[34.813rem] imgbr'
+        className='w-[18.75rem] h-[22.38rem] LT:w-[21.5rem] LT:h-[25rem] lg:w-[26rem] lg:h-[28rem] FF:w-[32.75rem] FF:h-[31rem] imgbr'
         />
       </div>
       <div className='LT:max-w-[25rem]  LS:max-w-[33rem] FF:max-w-[40.625rem] mx-[20px]'>

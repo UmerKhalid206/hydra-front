@@ -4,6 +4,8 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import { useEffect, useState } from "react";
 import About from "./components/About";
+import Servics from "./components/Servics";
+import TechSection from "./components/TechSection";
 
 export default function Home() {
   const [screenWidth, setScreenWidth] = useState<number|string>();
@@ -43,8 +45,8 @@ export default function Home() {
     <Navbar />
     <Hero />
     <About />
-
-    {/* <Carousel items={images} /> */}
+    <Servics />
+    <TechSection />
     
     </div>
   );
