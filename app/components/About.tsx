@@ -44,7 +44,7 @@ const About = () => {
       <h2 className='hidden LT:block font-Montserrat font-bold  text-white text-[1.625rem] md:text-[2.25rem]'>ABOUT</h2>
       <p className='hidden LT:block font-Montserrat weight text-white text-[1.625rem] md:text-[2.25rem]'>HYDRA VR</p>
       <div className='flex flex-col items-center LT:items-start mt-[50px] LT:mt-[36px]'>
-        <p className='w-full font-Montserrat text-[12px]  FF:text-[1rem] text-white break-words text-justify'>
+        <p className='select-none cursor-text w-full font-Montserrat text-[12px]  FF:text-[1rem] text-white break-words text-justify'>
         Eget mi proin sed libero enim sed faucibus turpis. Nisl rhoncus mattis rhoncus 
         urna neque viverra justo. Vivamus at augue eget arcu dictum. Ultrices gravida 
         dictum fusce ut placerat orci. Aenean et tortor at risus viverra adipiscing at in. 

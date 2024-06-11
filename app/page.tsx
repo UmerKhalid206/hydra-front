@@ -6,6 +6,9 @@ import { useEffect, useState } from "react";
 import About from "./components/About";
 import Servics from "./components/Servics";
 import TechSection from "./components/TechSection";
+import ProcessSection from "./components/ProcessSection";
+import JoinForm from "./components/JoinForm";
+import Footer from "./components/Footer";
 
 export default function Home() {
   const [screenWidth, setScreenWidth] = useState<number|string>();
@@ -32,12 +35,8 @@ export default function Home() {
     'https://via.placeholder.com/800x400?text=Slide+3',
   ];
   return (
-    <div className="bck-vect"
+    <div className="bck-vect pb-12"
     style={{
-      // backgroundImage:"url('/Vector1.svg')",
-      // backgroundRepeat: "no-repeat",
-      // backgroundPosition: `calc(${screenWidth}*0.710416) 170px`,
-      // backgroundSize:`calc(${screenWidth}*0.2875) 669px`
     }
     }
     >
@@ -47,7 +46,9 @@ export default function Home() {
     <About />
     <Servics />
     <TechSection />
-    
+    <ProcessSection />
+    <JoinForm />
+    <Footer />
     </div>
   );
 }

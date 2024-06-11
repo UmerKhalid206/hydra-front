@@ -20,6 +20,17 @@ body::-webkit-scrollbar {
   font-style: normal; /* Adjust font style if needed */
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type=number] {
+    -moz-appearance:textfield; /* Firefox */
+}
+
 .gumok{
   font-family: 'GumokRegular';
 }
@@ -218,12 +229,45 @@ body::-webkit-scrollbar {
   background-repeat: no-repeat;
 }
 
-
-
 .techBG{
   background-image: url('/techGirl.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center calc(32.75%);
 
+}
+@media (min-width: 0px) and (max-width:1023px){
+.techBG{
+  background-image: url('/techGirl.jpg');
+  background-repeat: no-repeat;
+  background-size: 980px 600px;
+  background-position: 36% 30%;
+}
+}
+
+
+/* can only be used if images have color before */
+.color-on-hover {
+  filter: grayscale(100%);
+  transition: filter 0.5s ease; /* Smooth transition */
+}
+
+.color-on-hover:hover {
+  filter: grayscale(0%);
+}
+
+.formInp::placeholder{
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  opacity:0.8;
+}
+
+
+.hrGradient{
+  background-image: linear-gradient(to right,#343045 0%, #C0B7E8 35%, #8176AF 69%, #343045 100%);
+  }
+  
+  .hrGradSM{
+    background-image: linear-gradient(to right, #8176AF 0%,#343045 7%, #C0B7E8 35%, #8176AF 69%, #343045 93%, #8176AF 100%);
 }

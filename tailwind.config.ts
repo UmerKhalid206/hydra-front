@@ -15,7 +15,8 @@ const config: Config = {
     extend: {
       screens:{
         'MB': '390px',      //hydras own design mobile
-        'LT':'860px',       //large tab
+        'MDB': '785px',
+        'LT':'870px',       //large tab
         'LS':'1150px',      //large screen
         'FF': '1440px',      //fourteen fourty
       },
