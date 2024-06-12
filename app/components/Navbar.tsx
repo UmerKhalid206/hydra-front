@@ -2,7 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 const Navbar = () => {
   return (
-    <div className='lg:umer'>
+    <div className=''>
 
         {/* nav */}
     <div className='flex justify-between items-center md:gap-2s px-5 pt-[1.5625rem] md:px-[2.25rem] xl:px-[4.688rem] xl:pt-[2.688rem] FF:px-[5.25rem] FF:pt-[3.125rem]'>  

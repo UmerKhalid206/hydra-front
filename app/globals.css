@@ -12,6 +12,7 @@ body::-webkit-scrollbar {
   display: none;
 }
 
+
 @font-face {
   font-family: 'GumokRegular';
   src: url('/fonts/Gumok.ttf') format('ttf');/* Update the file format if necessary */
@@ -64,46 +65,57 @@ input[type=number] {
 
 @media (min-width: 768px) and (max-width:850px) {
   .bck-vect {
-    background-image: url('/Vector1.svg');
-    background-repeat: no-repeat;
-    background-position: calc(100vw *0.60) calc(961px * 0.08);
-    background-size: calc(100vw *0.51) calc(961px *0.55);
+    background-image: url('/Vector1.svg'), url('/Vector2.svg');
+    background-repeat: no-repeat, no-repeat;
+    background-position: calc(100vw *0.60) calc(961px * 0.08), calc(103%) -10px;
+    background-size: calc(100vw *0.51) calc(961px *0.55), 380px 590px;
   }
 }
 
 @media (min-width: 850px) and (max-width:1024px) {
   .bck-vect {
-    background-image: url('/Vector1.svg');
-    background-repeat: no-repeat;
-    background-position: calc(100vw *0.62) calc(961px * 0.08);
-    background-size: calc(100vw *0.51) calc(961px *0.51);
+    background-image: url('/Vector1.svg'), url('/Vector2.svg');
+    background-repeat: no-repeat, no-repeat;
+    background-position: calc(100vw *0.62) calc(961px * 0.08), calc(103%) -10px;
+    background-size: calc(100vw *0.51) calc(961px *0.51), 380px 590px, 370px 845px;
   }
 }
 
-@media (min-width: 1024px) and (max-width:1280px) {
+@media (min-width: 1024px) and (max-width:1200px) {
   .bck-vect {
-    background-image: url('/Vector1.svg');
-    background-repeat: no-repeat;
-    background-position: calc(100vw *0.675) calc(961px * 0.13);
-    background-size: calc(100vw *0.40) calc(961px *0.68);
+    background-image: url('/Vector1.svg'), url('/Vector2.svg'), url('/Vector3.svg');
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: calc(100vw *0.675) calc(961px * 0.13), calc(90%) -30px, calc(100% + 110px) 313px;
+    background-size: calc(100vw *0.40) calc(961px *0.68), 370px 845px, 660px 460px;
+  }
+}
+@media (min-width: 1150px) and (max-width:1280px) {
+  .bck-vect {
+    background-image: url('/Vector1.svg'), url('/Vector2.svg'), url('/Vector3.svg');
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: calc(100vw *0.675) calc(961px * 0.13), calc(90%) -50px, calc(100% + 110px) 295px;
+    background-size: calc(100vw *0.40) calc(961px *0.68), 340px 845px, 680px 500px;
   }
 }
 @media (min-width: 1280px) and (max-width:1440px) {
   .bck-vect {
-    background-image: url('/Vector1.svg');
-    background-repeat: no-repeat;
-    background-position: calc(100vw *0.72) calc(961px * 0.155);
-    background-size: calc(100vw *0.30) calc(961px *0.65);
-
+    background-image: url('/Vector1.svg'), url('/Vector2.svg'), url('/Vector3.svg');
+    background-repeat: no-repeat, no-repeat , no-repeat;
+    background-position: calc(100% + 35px) 149px, calc(90%) -30px ,calc(100% + 85px) 320px;
+    background-size: 414px 625px, 350px 845px, 725px 519px;
+    /* background-position: calc(100vw *0.72) calc(961px * 0.155), calc(90%) -30px ,calc(100% + 85px) 320px;
+    background-size: calc(100vw *0.30) calc(961px *0.65), 350px 845px, 725px 519px; */
   }
 }
 
-@media (min-width: 1440px) and (max-width: 1576px) {
+@media (min-width: 1440px) {
   .bck-vect {
-    background-image: url('/Vector1.svg');
-    background-repeat: no-repeat;
-    background-position: calc(100vw *0.710416) calc(961px * 0.1769);
-    background-size: calc(100vw *0.2875) calc(961px *0.696149);
+    background-image: url('/Vector1.svg'), url('/Vector2.svg'), url('/Vector3.svg');
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: calc(100%) 170px, calc(88%) -10px, calc(100% + 20px) 403px;
+    background-size: 414px 669px, 380px 845px, 735px 419px;
+    /* background-position: calc(100vw *0.710416) calc(961px * 0.1769), calc(88%) -10px, calc(100% + 20px) 403px;
+    background-size: calc(100vw *0.2875) calc(961px *0.696149), 380px 845px, 735px 419px; */
 
 
   }
@@ -111,36 +123,61 @@ input[type=number] {
 
 
 
-.umer {
+.personalContianer {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
+@media (min-width: 390px) {
+  .personalContianer {
+      max-width: 390px;
+  }
+}
 @media (min-width: 640px) {
-  .umer {
+  .personalContianer {
       max-width: 640px;
   }
 }
 @media (min-width: 768px) {
-  .umer {
+  .personalContianer {
       max-width: 768px;
   }
 }
+@media (min-width: 785px) {
+  .personalContianer {
+      max-width: 785px;
+  }
+}
+@media (min-width: 870px) {
+  .personalContianer {
+      max-width: 870px;
+  }
+}
 @media (min-width: 1024px) {
-  .umer {
+  .personalContianer {
       max-width: 1024px;
   }
 }
+@media (min-width: 1150px) {
+  .personalContianer {
+      max-width: 1150px;
+  }
+}
 @media (min-width: 1280px) {
-  .umer {
+  .personalContianer {
+      max-width: 1280px;
+  }
+}
+@media (min-width: 1440px) {
+  .personalContianer {
       max-width: 1440px;
   }
 }
 @media (min-width: 1536px) {
-  .umer {
-      max-width: 1920px;
+  .personalContianer {
+      max-width: 1536px;
   }
-}
+} 
 
 
 
@@ -270,4 +307,34 @@ input[type=number] {
   
   .hrGradSM{
     background-image: linear-gradient(to right, #8176AF 0%,#343045 7%, #C0B7E8 35%, #8176AF 69%, #343045 93%, #8176AF 100%);
+}
+
+
+.formDropFilter{
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.formGradient{
+  background-color: #211E2E; /* Overall background color */
+  /* radial gradient is always applied using background-image property */
+  background-image: radial-gradient(ellipse, rgba(64, 58, 95, 0.9) 0%, rgba(64, 58, 95, 0.25) 50%, rgba(33, 30, 46, 0.4) 75%, transparent 100%);   
+  /* rgba(67,61,96, 0.9) 0% => 0% means at the very center from where circle radius begins this is the color */
+  /* rgba(67,61,96, 0.5) 20% => at 20% away from center on radial axis color should be this */
+  /* transparent 53% => at 53% distance radius it should be transparent going to the edge */
+  background-size: 290px 1000px;   /* background sizes width and height of gradient, this property effects on background image*/
+  background-position: center; /*background position for property background-image*/
+  background-repeat: no-repeat;
+}
+@media (min-width:869px){
+  .formGradient{
+    background-color: #211E2E; /* Overall background color */
+    /* radial gradient is always applied using background-image property */
+    background-image: radial-gradient(circle, rgba(64, 58, 95, 0.7) 0%, rgba(64, 58, 95, 0.2) 50%, rgba(33, 30, 46, 0.5) 70%, transparent 100%);  /*it means that shape of this gradient is ellipse, or you can also set cicle 40% 70% [means 40% on x and 70% on y, do a little research]*/ 
+    /* rgba(67,61,96, 0.9) 0% => 0% means at the very center from where circle radius begins this is the color */
+    /* rgba(67,61,96, 0.5) 20% => at 20% away from center on radial axis color should be this */
+    /* transparent 53% => at 53% distance radius it should be transparent going to the edge */
+    background-size: 1200px 850px;   /* background sizes width and height of gradient, this property effects on background image*/
+    background-position: center; /*background position for property background-image*/
+    background-repeat: no-repeat;
+  }
 }

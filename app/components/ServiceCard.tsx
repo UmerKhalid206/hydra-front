@@ -10,7 +10,7 @@ const ServiceCard = ({item}:{item:Item}) => {
   return (
 
     <>
-        <div className='cardGradient flex flex-col items-center box-border  rounded-[2.5rem]  pt-6 pb-10 min-w-full md:min-w-[49%] lg:min-w-[32.5%] xl:hidden'>
+        <div className='formDropFilter cardGradient flex flex-col items-center box-border  rounded-[2.5rem]  pt-6 pb-10 min-w-full md:min-w-[49%] lg:min-w-[32.5%] xl:hidden'>
             <Image 
             src={`/${item.img}`}
             alt='card pic'

@@ -12,22 +12,21 @@ import Footer from "./components/Footer";
 
 export default function Home() {
   const [screenWidth, setScreenWidth] = useState<number|string>();
-  // const [screenHeight, setScreenHeight] = useState<number|string>(`${(Math.round(window.innerHeight))/16}rem`);
-  // useEffect(() => {
-  //   // Logic to get and update the screen width
-  //   const handleResize = () => {
-  //     setScreenWidth(`${(Math.round(window.innerWidth))/16}rem`);
-  //     setScreenHeight(`${(Math.round(window.innerHeight))/16}rem`)
-  //   };
+  const [screenHeight, setScreenHeight] = useState<number|string>(`${(Math.round(window.innerHeight))/16}rem`);
+  useEffect(() => {
+    // Logic to get and update the screen width
+    const handleResize = () => {
+      setScreenWidth(`${window.innerWidth}`);
+      setScreenHeight(`${window.innerHeight}`)
+    };
 
-  //   window.addEventListener('resize', handleResize);
+    window.addEventListener('resize', handleResize);
 
-  //   return () => {
-  //     window.removeEventListener('resize', handleResize);
-  //   };
-  // }, []);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
-  // console.warn('screenWidth', screenWidth)
 
   const images = [
     'https://via.placeholder.com/800x400?text=Slide+1',
@@ -35,13 +34,13 @@ export default function Home() {
     'https://via.placeholder.com/800x400?text=Slide+3',
   ];
   return (
-    <div className="bck-vect pb-12"
-    style={{
-    }
-    }
+    <div className="bck-vect personalContianer pb-12"
+
     >
 
+
     <Navbar />
+    <h1 className="absolute text-xl text-white">width: {screenWidth} <br /> height: {screenHeight}</h1>
     <Hero />
     <About />
     <Servics />
