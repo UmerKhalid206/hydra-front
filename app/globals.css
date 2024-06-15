@@ -12,12 +12,24 @@ body::-webkit-scrollbar {
   display: none;
 }
 
+
 @font-face {
   font-family: 'GumokRegular';
   src: url('/fonts/Gumok.ttf') format('ttf');/* Update the file format if necessary */
   /* Add more src lines if you have other font formats */
   font-weight: normal; /* Adjust font weight if needed */
   font-style: normal; /* Adjust font style if needed */
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type=number] {
+    -moz-appearance:textfield; /* Firefox */
 }
 
 .gumok{
@@ -32,7 +44,7 @@ body::-webkit-scrollbar {
 .bck-vect {
   background-image: url('/SM_V1.svg'), url('/SM_V2.svg'), url('/SM_V3.svg');
   background-repeat: no-repeat, no-repeat, no-repeat;
-  background-position: calc(50% + 37px) 80px, calc(50% - 1px) -33px, calc(50%) calc(50% + 47px);
+  background-position: calc(50% + 37px) 80px, calc(50% - 1px) -33px, calc(50%) 250px;
   background-size: 342px 510px, 258px 660px, 617px 352px;
   /* background-image: url('/Vector1.svg'), url('/Vector2.svg'), url('/Vector3.svg'), url('/Vector4.svg');
   background-repeat: no-repeat, no-repeat, no-repeat, no-repeat; */
@@ -42,7 +54,7 @@ body::-webkit-scrollbar {
 
 @media (min-width: 390px) and (max-width: 768px){
   .bck-vect {
-    background-position: calc(50% + 37px) 80px, calc(50% - 21px) -45px, calc(50%) calc(50% + 47px);
+    background-position: calc(50% + 37px) 80px, calc(50% - 21px) -45px, calc(50%) 268px;
     background-size: 347px 562px, 302px 705px, 617px 352px;
     /* background-position: calc(100vw * 0.2615) calc(644px * 0.1195);
     background-size: calc(100vw * 0.7384) calc(644px * 0.8726); */
@@ -53,46 +65,63 @@ body::-webkit-scrollbar {
 
 @media (min-width: 768px) and (max-width:850px) {
   .bck-vect {
-    background-image: url('/Vector1.svg');
-    background-repeat: no-repeat;
-    background-position: calc(100vw *0.60) calc(961px * 0.08);
-    background-size: calc(100vw *0.51) calc(961px *0.55);
+    background-image: url('/Vector1.svg'), url('/Vector2.svg'), url('/Vector3.svg');
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: calc(100% + 93px) 77px, calc(103%) -10px, calc(100% + 80px) -35px;
+    background-size: 414px 490.1px, 380px 590px, 480px 820px;
+    /* background-position: calc(100vw *0.60) calc(961px * 0.08), calc(103%) -10px;
+    background-size: calc(100vw *0.51) calc(961px *0.55), 380px 590px; */
   }
 }
 
 @media (min-width: 850px) and (max-width:1024px) {
   .bck-vect {
-    background-image: url('/Vector1.svg');
-    background-repeat: no-repeat;
-    background-position: calc(100vw *0.62) calc(961px * 0.08);
-    background-size: calc(100vw *0.51) calc(961px *0.51);
+    background-image: url('/Vector1.svg'), url('/Vector2.svg'), url('/Vector3.svg');
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: calc(100% + 93px) 77px, calc(103%) -10px, calc(100% + 40px) -30px;
+    background-size: 414px 490.1px, 380px 590px, 470px 820px;
+    /* background-position: calc(100vw *0.62) calc(961px * 0.08), calc(103%) -10px;
+    background-size: calc(100vw *0.51) calc(961px *0.51), 380px 590px, 370px 845px; */
   }
 }
 
-@media (min-width: 1024px) and (max-width:1280px) {
+@media (min-width: 1024px) and (max-width:1200px) {
   .bck-vect {
-    background-image: url('/Vector1.svg');
-    background-repeat: no-repeat;
-    background-position: calc(100vw *0.675) calc(961px * 0.13);
-    background-size: calc(100vw *0.40) calc(961px *0.68);
+    background-image: url('/Vector1.svg'), url('/Vector2.svg'), url('/Vector3.svg'), url('/Vector4.svg'), url('/stepsVector.svg'), url('/footerUpVect.svg'), url('/footBVect.svg');
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+    background-position: calc(100% + 65px) 125px, calc(90%) -30px, calc(100% + 110px) 313px, 2.5px 215px, -9px 3235px, 4.5px 4228px, -100px 4435px;
+    background-size: 414px 653.5px, 370px 845px, 660px 460px, 185px 561px, 1140px 163px, 980px 363px, 1180px 264px;
+    /* background-position: calc(100vw *0.675) calc(961px * 0.13), calc(90%) -30px, calc(100% + 110px) 313px;
+    background-size: calc(100vw *0.40) calc(961px *0.68), 370px 845px, 660px 460px; */
+  }
+}
+@media (min-width: 1150px) and (max-width:1280px) {
+  .bck-vect {
+    background-image: url('/Vector1.svg'), url('/Vector2.svg'), url('/Vector3.svg'), url('/Vector4.svg'), url('/stepsVector.svg'), url('/footerUpVect.svg'), url('/footBVect.svg');
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+    background-position: calc(100% + 65px) 125px, calc(90%) -50px, calc(100% + 110px) 295px, 2.5px 215px, -9px 3230px, 4.5px 4205px, -100px 4448px;
+    background-size: 414px 653.5px, 340px 845px, 680px 500px, 185px 561px, 1220px 163px , 1160px 363px, 1330px 264px;
+    /* background-position: calc(100vw *0.675) calc(961px * 0.13), calc(90%) -50px, calc(100% + 110px) 295px;
+    background-size: calc(100vw *0.40) calc(961px *0.68), 340px 845px, 680px 500px; */
   }
 }
 @media (min-width: 1280px) and (max-width:1440px) {
   .bck-vect {
-    background-image: url('/Vector1.svg');
-    background-repeat: no-repeat;
-    background-position: calc(100vw *0.72) calc(961px * 0.155);
-    background-size: calc(100vw *0.30) calc(961px *0.65);
-
+    background-image: url('/Vector1.svg'), url('/Vector2.svg'), url('/Vector3.svg'), url('/Vector4.svg'), url('/stepsVector.svg'), url('/footerUpVect.svg'), url('/footBVect.svg');
+    background-repeat: no-repeat, no-repeat , no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+    background-position: calc(100% + 35px) 149px, calc(90%) -30px ,calc(100% + 85px) 320px, 2.5px 274px, -9px 3250px, 4.5px 4215px, -100px 4468px;
+    background-size: 414px 625px, 350px 845px, 725px 519px, 238px 561px, 1300px 163px, 1260px 363px, 1470px 264px;
+    /* background-position: calc(100vw *0.72) calc(961px * 0.155), calc(90%) -30px ,calc(100% + 85px) 320px;
+    background-size: calc(100vw *0.30) calc(961px *0.65), 350px 845px, 725px 519px; */
   }
 }
 
-@media (min-width: 1440px) and (max-width: 1576px) {
+@media (min-width: 1440px) {
   .bck-vect {
-    background-image: url('/Vector1.svg');
-    background-repeat: no-repeat;
-    background-position: calc(100vw *0.710416) calc(961px * 0.1769);
-    background-size: calc(100vw *0.2875) calc(961px *0.696149);
+    background-image: url('/Vector1.svg'), url('/Vector2.svg'), url('/Vector3.svg'), url('/Vector4.svg'), url('/stepsVector.svg'), url('/footerUpVect.svg'), url('/footBVect.svg');
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+    background-position: calc(100%) 170px, calc(88%) -10px, calc(100% + 20px) 403px, 0px 274px, -9px 3380px, 4.5px 4332px, -100px 4600px;
+    background-size: 414px 669px, 380px 845px, 735px 419px, 242px 561px, 1500px 163px, 1423px 363px, 1640px 264px;
 
 
   }
@@ -100,36 +129,79 @@ body::-webkit-scrollbar {
 
 
 
-.umer {
+
+.stpsVect{
+  background-image: url('/stepsVector.svg');
+  background-repeat: no-repeat;
+  background-position: -9px 3665px;
+  background-size: 1449px 163px;
+}
+@media (min-width: 1280px) and (max-width:1440px) {
+  .stpsVect {
+    background-image: url('/stepsVector.svg');
+    background-repeat: no-repeat;
+    background-position: -9px 3665px;
+    background-size: 1449px 163px;
+  
+  }
+}
+
+
+.personalContianer {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
+/* @media (min-width: 390px) {
+  .personalContianer {
+      max-width: 390px;
+  }
+}
 @media (min-width: 640px) {
-  .umer {
+  .personalContianer {
       max-width: 640px;
   }
 }
 @media (min-width: 768px) {
-  .umer {
+  .personalContianer {
       max-width: 768px;
   }
 }
+@media (min-width: 785px) {
+  .personalContianer {
+      max-width: 785px;
+  }
+} */
+@media (min-width: 870px) {
+  .personalContianer {
+      max-width: 870px;
+  }
+}
 @media (min-width: 1024px) {
-  .umer {
+  .personalContianer {
       max-width: 1024px;
   }
 }
+@media (min-width: 1150px) {
+  .personalContianer {
+      max-width: 1150px;
+  }
+}
 @media (min-width: 1280px) {
-  .umer {
+  .personalContianer {
+      max-width: 1280px;
+  }
+}
+@media (min-width: 1440px) {
+  .personalContianer {
       max-width: 1440px;
   }
 }
 @media (min-width: 1536px) {
-  .umer {
-      max-width: 1920px;
+  .personalContianer {
+      max-width: 1536px;
   }
-}
+} 
 
 
 
@@ -185,4 +257,153 @@ body::-webkit-scrollbar {
 
 .carousel-control.next {
   right: 10px;
+}
+
+/* rounded-l-[8rem] rounded-r-[3.5rem] rounded-br-[8rem] rounded-bl-[3.5rem] */
+.imgbr{
+  border-top-left-radius: 8rem;
+  border-top-right-radius: 3.5rem;
+  border-bottom-right-radius: 8rem;
+  border-bottom-left-radius: 3.5rem;
+}
+
+@media (min-width: 860px){
+  .imgbr{
+    border-top-left-radius: 10rem;
+    border-top-right-radius: 4.5rem;
+    border-bottom-right-radius: 10rem;
+    border-bottom-left-radius: 4.5rem;
+  }
+}
+
+
+
+.cardGradient {
+  background-color: #211E2E; /* Overall background color */
+  /* radial gradient is always applied using background-image property */
+  background-image: radial-gradient(ellipse, rgba(67,61,96, 0.85) 0%, rgba(67,61,96, 0.5) 20%, transparent 53%);  /*it means that shape of this gradient is ellipse, or you can also set cicle 40% 70% [means 40% on x and 70% on y, do a little research]*/ 
+  /* rgba(67,61,96, 0.9) 0% => 0% means at the very center from where circle radius begins this is the color */
+  /* rgba(67,61,96, 0.5) 20% => at 20% away from center on radial axis color should be this */
+  /* transparent 53% => at 53% distance radius it should be transparent going to the edge */
+  background-size: 410px 700px;   /* background sizes width and height of gradient, this property effects on background image*/
+  background-position: 50% -95px; /*background position for property background-image*/
+  background-repeat: no-repeat;
+}
+
+.techBG{
+  background-image: url('/techGirl.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center calc(32.75%);
+
+}
+@media (min-width: 0px) and (max-width:1023px){
+.techBG{
+  background-image: url('/techGirl.jpg');
+  background-repeat: no-repeat;
+  background-size: 980px 600px;
+  background-position: 36% 30%;
+}
+}
+
+
+/* can only be used if images have color before */
+.color-on-hover {
+  filter: grayscale(100%);
+  transition: filter 0.5s ease; /* Smooth transition */
+}
+
+.color-on-hover:hover {
+  filter: grayscale(0%);
+}
+
+.formInp::placeholder{
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  opacity:0.8;
+}
+
+
+.hrGradient{
+  background-image: linear-gradient(to right,#343045 0%, #C0B7E8 35%, #8176AF 69%, #343045 100%);
+  }
+  
+  .hrGradSM{
+    background-image: linear-gradient(to right, #8176AF 0%,#343045 7%, #C0B7E8 35%, #8176AF 69%, #343045 93%, #8176AF 100%);
+}
+
+
+.formDropFilter{
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.formGradient{
+  background-color: #211E2E; /* Overall background color */
+  /* radial gradient is always applied using background-image property */
+  background-image: radial-gradient(ellipse, rgba(64, 58, 95, 0.9) 0%, rgba(64, 58, 95, 0.25) 50%, rgba(33, 30, 46, 0.4) 75%, transparent 100%);   
+  /* rgba(67,61,96, 0.9) 0% => 0% means at the very center from where circle radius begins this is the color */
+  /* rgba(67,61,96, 0.5) 20% => at 20% away from center on radial axis color should be this */
+  /* transparent 53% => at 53% distance radius it should be transparent going to the edge */
+  background-size: 290px 1000px;   /* background sizes width and height of gradient, this property effects on background image*/
+  background-position: center; /*background position for property background-image*/
+  background-repeat: no-repeat;
+}
+@media (min-width:869px){
+  .formGradient{
+    background-color: #211E2E; /* Overall background color */
+    /* radial gradient is always applied using background-image property */
+    background-image: radial-gradient(circle, rgba(64, 58, 95, 0.7) 0%, rgba(64, 58, 95, 0.2) 50%, rgba(33, 30, 46, 0.5) 70%, transparent 100%);  /*it means that shape of this gradient is ellipse, or you can also set cicle 40% 70% [means 40% on x and 70% on y, do a little research]*/ 
+    /* rgba(67,61,96, 0.9) 0% => 0% means at the very center from where circle radius begins this is the color */
+    /* rgba(67,61,96, 0.5) 20% => at 20% away from center on radial axis color should be this */
+    /* transparent 53% => at 53% distance radius it should be transparent going to the edge */
+    background-size: 1200px 850px;   /* background sizes width and height of gradient, this property effects on background image*/
+    background-position: center; /*background position for property background-image*/
+    background-repeat: no-repeat;
+  }
+}
+
+
+.waveBTN{
+  width: 250px;
+  height: 60px;
+  background: rgba(255, 185, 0);
+  border: 0.5mm solid black;
+  border-radius: 5mm;
+  box-shadow: 3px 3px 0 black;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.text{
+  position: relative;
+  font-size: 22px;
+  font-weight: bold;
+  z-index: 1;
+}
+
+.wave{
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  background: url('/wave.svg');
+  background-size: 200% 100%;
+  top: 100%;
+  left: 0%;
+  animation: wave 2s linear infinite;
+  transition: 0.5s;
+}
+
+.waveBTN:hover .wave{
+  top: 50%;
+}
+
+@keyframes wave{
+from{
+  background-position-x: 0;
+}
+to{
+  background-position-x: 200%;
+}
 }

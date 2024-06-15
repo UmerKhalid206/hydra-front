@@ -4,15 +4,21 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import { useEffect, useState } from "react";
 import About from "./components/About";
+import Servics from "./components/Servics";
+import TechSection from "./components/TechSection";
+import ProcessSection from "./components/ProcessSection";
+import JoinForm from "./components/JoinForm";
+import Footer from "./components/Footer";
+import WaveBTN from "./components/WaveBTN";
 
 export default function Home() {
-  const [screenWidth, setScreenWidth] = useState<number|string>();
+  // const [screenWidth, setScreenWidth] = useState<number|string>();
   // const [screenHeight, setScreenHeight] = useState<number|string>(`${(Math.round(window.innerHeight))/16}rem`);
   // useEffect(() => {
   //   // Logic to get and update the screen width
   //   const handleResize = () => {
-  //     setScreenWidth(`${(Math.round(window.innerWidth))/16}rem`);
-  //     setScreenHeight(`${(Math.round(window.innerHeight))/16}rem`)
+  //     setScreenWidth(`${window.innerWidth}`);
+  //     setScreenHeight(`${window.innerHeight}`)
   //   };
 
   //   window.addEventListener('resize', handleResize);
@@ -22,7 +28,6 @@ export default function Home() {
   //   };
   // }, []);
 
-  // console.warn('screenWidth', screenWidth)
 
   const images = [
     'https://via.placeholder.com/800x400?text=Slide+1',
@@ -30,24 +35,20 @@ export default function Home() {
     'https://via.placeholder.com/800x400?text=Slide+3',
   ];
   return (
-    <div className="bck-vect lg:container"
-    style={{
-      // backgroundImage:"url('/Vector1.svg')",
-      // backgroundRepeat: "no-repeat",
-      // backgroundPosition: `calc(${screenWidth}*0.710416) 170px`,
-      // backgroundSize:`calc(${screenWidth}*0.2875) 669px`
-    }
-    }
-    >
-      <h1 className="text-white">
-        {}
-      </h1>
-    <Navbar />
-    <Hero />
-    {/* <About /> */}
+    <div className="bck-vect personalContianer pb-12"
 
-    {/* <Carousel items={images} /> */}
-    
+    >
+
+    {/* <WaveBTN /> */}
+    <Navbar />
+    {/* <h1 className="absolute text-xl text-white">width: {screenWidth} <br /> height: {screenHeight}</h1> */}
+    <Hero />
+    <About />
+    <Servics />
+    <TechSection />
+    <ProcessSection />
+    <JoinForm />
+    <Footer />
     </div>
   );
 }
