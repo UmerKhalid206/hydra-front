@@ -87,7 +87,9 @@ const TechSection = () => {
             </div>
 
             <div className='hidden lg:block left-[49%] -bottom-8 z-50 absolute border-[11px] border-[#0E0E0E] border-opacity-[0.32] rounded-full'>
-      <button onClick={handleResize}  className=' bg-gradient-to-r from-[#8176AF] to-[#C0B7E8] rounded-full px-2 py-[14px] '>
+      <button 
+    //   onClick={handleResize}  
+      className=' bg-gradient-to-r from-[#8176AF] to-[#C0B7E8] rounded-full px-2 py-[14px] '>
                 <Image 
                     src={'/cardArrow.svg'}
                     width={25}

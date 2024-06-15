@@ -65,44 +65,52 @@ input[type=number] {
 
 @media (min-width: 768px) and (max-width:850px) {
   .bck-vect {
-    background-image: url('/Vector1.svg'), url('/Vector2.svg');
-    background-repeat: no-repeat, no-repeat;
-    background-position: calc(100vw *0.60) calc(961px * 0.08), calc(103%) -10px;
-    background-size: calc(100vw *0.51) calc(961px *0.55), 380px 590px;
+    background-image: url('/Vector1.svg'), url('/Vector2.svg'), url('/Vector3.svg');
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: calc(100% + 93px) 77px, calc(103%) -10px, calc(100% + 80px) -35px;
+    background-size: 414px 490.1px, 380px 590px, 480px 820px;
+    /* background-position: calc(100vw *0.60) calc(961px * 0.08), calc(103%) -10px;
+    background-size: calc(100vw *0.51) calc(961px *0.55), 380px 590px; */
   }
 }
 
 @media (min-width: 850px) and (max-width:1024px) {
   .bck-vect {
-    background-image: url('/Vector1.svg'), url('/Vector2.svg');
-    background-repeat: no-repeat, no-repeat;
-    background-position: calc(100vw *0.62) calc(961px * 0.08), calc(103%) -10px;
-    background-size: calc(100vw *0.51) calc(961px *0.51), 380px 590px, 370px 845px;
+    background-image: url('/Vector1.svg'), url('/Vector2.svg'), url('/Vector3.svg');
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: calc(100% + 93px) 77px, calc(103%) -10px, calc(100% + 40px) -30px;
+    background-size: 414px 490.1px, 380px 590px, 470px 820px;
+    /* background-position: calc(100vw *0.62) calc(961px * 0.08), calc(103%) -10px;
+    background-size: calc(100vw *0.51) calc(961px *0.51), 380px 590px, 370px 845px; */
   }
 }
 
 @media (min-width: 1024px) and (max-width:1200px) {
   .bck-vect {
-    background-image: url('/Vector1.svg'), url('/Vector2.svg'), url('/Vector3.svg');
-    background-repeat: no-repeat, no-repeat, no-repeat;
-    background-position: calc(100vw *0.675) calc(961px * 0.13), calc(90%) -30px, calc(100% + 110px) 313px;
-    background-size: calc(100vw *0.40) calc(961px *0.68), 370px 845px, 660px 460px;
+    background-image: url('/Vector1.svg'), url('/Vector2.svg'), url('/Vector3.svg'), url('/Vector4.svg'), url('/stepsVector.svg'), url('/footerUpVect.svg'), url('/footBVect.svg');
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+    background-position: calc(100% + 65px) 125px, calc(90%) -30px, calc(100% + 110px) 313px, 2.5px 215px, -9px 3235px, 4.5px 4228px, -100px 4435px;
+    background-size: 414px 653.5px, 370px 845px, 660px 460px, 185px 561px, 1140px 163px, 980px 363px, 1180px 264px;
+    /* background-position: calc(100vw *0.675) calc(961px * 0.13), calc(90%) -30px, calc(100% + 110px) 313px;
+    background-size: calc(100vw *0.40) calc(961px *0.68), 370px 845px, 660px 460px; */
   }
 }
 @media (min-width: 1150px) and (max-width:1280px) {
   .bck-vect {
-    background-image: url('/Vector1.svg'), url('/Vector2.svg'), url('/Vector3.svg');
-    background-repeat: no-repeat, no-repeat, no-repeat;
-    background-position: calc(100vw *0.675) calc(961px * 0.13), calc(90%) -50px, calc(100% + 110px) 295px;
-    background-size: calc(100vw *0.40) calc(961px *0.68), 340px 845px, 680px 500px;
+    background-image: url('/Vector1.svg'), url('/Vector2.svg'), url('/Vector3.svg'), url('/Vector4.svg'), url('/stepsVector.svg'), url('/footerUpVect.svg'), url('/footBVect.svg');
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+    background-position: calc(100% + 65px) 125px, calc(90%) -50px, calc(100% + 110px) 295px, 2.5px 215px, -9px 3230px, 4.5px 4205px, -100px 4448px;
+    background-size: 414px 653.5px, 340px 845px, 680px 500px, 185px 561px, 1220px 163px , 1160px 363px, 1330px 264px;
+    /* background-position: calc(100vw *0.675) calc(961px * 0.13), calc(90%) -50px, calc(100% + 110px) 295px;
+    background-size: calc(100vw *0.40) calc(961px *0.68), 340px 845px, 680px 500px; */
   }
 }
 @media (min-width: 1280px) and (max-width:1440px) {
   .bck-vect {
-    background-image: url('/Vector1.svg'), url('/Vector2.svg'), url('/Vector3.svg');
-    background-repeat: no-repeat, no-repeat , no-repeat;
-    background-position: calc(100% + 35px) 149px, calc(90%) -30px ,calc(100% + 85px) 320px;
-    background-size: 414px 625px, 350px 845px, 725px 519px;
+    background-image: url('/Vector1.svg'), url('/Vector2.svg'), url('/Vector3.svg'), url('/Vector4.svg'), url('/stepsVector.svg'), url('/footerUpVect.svg'), url('/footBVect.svg');
+    background-repeat: no-repeat, no-repeat , no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+    background-position: calc(100% + 35px) 149px, calc(90%) -30px ,calc(100% + 85px) 320px, 2.5px 274px, -9px 3250px, 4.5px 4215px, -100px 4468px;
+    background-size: 414px 625px, 350px 845px, 725px 519px, 238px 561px, 1300px 163px, 1260px 363px, 1470px 264px;
     /* background-position: calc(100vw *0.72) calc(961px * 0.155), calc(90%) -30px ,calc(100% + 85px) 320px;
     background-size: calc(100vw *0.30) calc(961px *0.65), 350px 845px, 725px 519px; */
   }
@@ -110,12 +118,10 @@ input[type=number] {
 
 @media (min-width: 1440px) {
   .bck-vect {
-    background-image: url('/Vector1.svg'), url('/Vector2.svg'), url('/Vector3.svg');
-    background-repeat: no-repeat, no-repeat, no-repeat;
-    background-position: calc(100%) 170px, calc(88%) -10px, calc(100% + 20px) 403px;
-    background-size: 414px 669px, 380px 845px, 735px 419px;
-    /* background-position: calc(100vw *0.710416) calc(961px * 0.1769), calc(88%) -10px, calc(100% + 20px) 403px;
-    background-size: calc(100vw *0.2875) calc(961px *0.696149), 380px 845px, 735px 419px; */
+    background-image: url('/Vector1.svg'), url('/Vector2.svg'), url('/Vector3.svg'), url('/Vector4.svg'), url('/stepsVector.svg'), url('/footerUpVect.svg'), url('/footBVect.svg');
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+    background-position: calc(100%) 170px, calc(88%) -10px, calc(100% + 20px) 403px, 0px 274px, -9px 3380px, 4.5px 4332px, -100px 4600px;
+    background-size: 414px 669px, 380px 845px, 735px 419px, 242px 561px, 1500px 163px, 1423px 363px, 1640px 264px;
 
 
   }
@@ -123,12 +129,30 @@ input[type=number] {
 
 
 
+
+.stpsVect{
+  background-image: url('/stepsVector.svg');
+  background-repeat: no-repeat;
+  background-position: -9px 3665px;
+  background-size: 1449px 163px;
+}
+@media (min-width: 1280px) and (max-width:1440px) {
+  .stpsVect {
+    background-image: url('/stepsVector.svg');
+    background-repeat: no-repeat;
+    background-position: -9px 3665px;
+    background-size: 1449px 163px;
+  
+  }
+}
+
+
 .personalContianer {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
-@media (min-width: 390px) {
+/* @media (min-width: 390px) {
   .personalContianer {
       max-width: 390px;
   }
@@ -147,7 +171,7 @@ input[type=number] {
   .personalContianer {
       max-width: 785px;
   }
-}
+} */
 @media (min-width: 870px) {
   .personalContianer {
       max-width: 870px;
@@ -337,4 +361,49 @@ input[type=number] {
     background-position: center; /*background position for property background-image*/
     background-repeat: no-repeat;
   }
+}
+
+
+.waveBTN{
+  width: 250px;
+  height: 60px;
+  background: rgba(255, 185, 0);
+  border: 0.5mm solid black;
+  border-radius: 5mm;
+  box-shadow: 3px 3px 0 black;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.text{
+  position: relative;
+  font-size: 22px;
+  font-weight: bold;
+  z-index: 1;
+}
+
+.wave{
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  background: url('/wave.svg');
+  background-size: 200% 100%;
+  top: 100%;
+  left: 0%;
+  animation: wave 2s linear infinite;
+  transition: 0.5s;
+}
+
+.waveBTN:hover .wave{
+  top: 50%;
+}
+
+@keyframes wave{
+from{
+  background-position-x: 0;
+}
+to{
+  background-position-x: 200%;
+}
 }

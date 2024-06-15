@@ -9,23 +9,24 @@ import TechSection from "./components/TechSection";
 import ProcessSection from "./components/ProcessSection";
 import JoinForm from "./components/JoinForm";
 import Footer from "./components/Footer";
+import WaveBTN from "./components/WaveBTN";
 
 export default function Home() {
-  const [screenWidth, setScreenWidth] = useState<number|string>();
-  const [screenHeight, setScreenHeight] = useState<number|string>(`${(Math.round(window.innerHeight))/16}rem`);
-  useEffect(() => {
-    // Logic to get and update the screen width
-    const handleResize = () => {
-      setScreenWidth(`${window.innerWidth}`);
-      setScreenHeight(`${window.innerHeight}`)
-    };
+  // const [screenWidth, setScreenWidth] = useState<number|string>();
+  // const [screenHeight, setScreenHeight] = useState<number|string>(`${(Math.round(window.innerHeight))/16}rem`);
+  // useEffect(() => {
+  //   // Logic to get and update the screen width
+  //   const handleResize = () => {
+  //     setScreenWidth(`${window.innerWidth}`);
+  //     setScreenHeight(`${window.innerHeight}`)
+  //   };
 
-    window.addEventListener('resize', handleResize);
+  //   window.addEventListener('resize', handleResize);
 
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
+  //   return () => {
+  //     window.removeEventListener('resize', handleResize);
+  //   };
+  // }, []);
 
 
   const images = [
@@ -38,9 +39,9 @@ export default function Home() {
 
     >
 
-
+    {/* <WaveBTN /> */}
     <Navbar />
-    <h1 className="absolute text-xl text-white">width: {screenWidth} <br /> height: {screenHeight}</h1>
+    {/* <h1 className="absolute text-xl text-white">width: {screenWidth} <br /> height: {screenHeight}</h1> */}
     <Hero />
     <About />
     <Servics />

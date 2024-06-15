@@ -24,7 +24,7 @@ const JoinForm = () => {
 
   return (
     <div className='mt-[5rem] md:mt-[10rem] mx-[20px] md:mx-[2.25rem] xl:mx-[4.688rem] FF:mx-[5.25rem]'>
-        <div className='flex flex-col items-center formDropFilter formGradient pt-[2.813rem] pb-[4.063rem] px-[1.313rem] LS:px-[4rem] xl:px-[6.688rem] rounded-[2.5rem]'>
+        <div className='flex flex-col items-center formDropFilter formGradient pt-[2.813rem] pb-[4.063rem] px-[1.313rem] LS:px-[4rem] xl:px-[6.688rem] rounded-[4.5rem]'>
         <h1 className='text-white font-Montserrat font-bold text-[24px]'>JOIN HYDRA</h1>
         <Image 
             src={`/formDivider.svg`}
